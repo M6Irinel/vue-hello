@@ -1,0 +1,19 @@
+
+.vue2{
+    width: 50px;
+}
+
+.bs5{
+    width: 65px;
+}
+
+#carousel1, #carouselExampleIndicators{
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#carousel1{
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #000000;
+}
