@@ -1,3 +1,4 @@
+// @ts-nocheck
 const app = new Vue( {
     el: '#vue',
     data () {
@@ -8,7 +9,7 @@ const app = new Vue( {
             img_id: 1,
             range_id_min: 30,
             range_id_max: 40,
-            time_autoPlay: 4000,
+            time_autoPlay: 3000,
             interv: setInterval( this.img_next, this.time_autoPlay )
         }
     },
@@ -40,5 +41,7 @@ const app = new Vue( {
             this.img_src = `https://picsum.photos/id/${this.img_id--}/600/400`;
         }
     },
+    create() {
+        this.autoPlay();
+    }
 } );
-app.start();

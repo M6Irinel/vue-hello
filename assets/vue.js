@@ -1,3 +1,4 @@
+// @ts-nocheck
 new Vue( {
     el: '#vue',
     data () {
